@@ -535,6 +535,82 @@ plt.show()
 co=df['mass'].median()
 df['mass'].fillna(co,inplace=True)
 
+#drop
+dataset.drop(columns = ‘Refs’,inplace=True)
+#drop multiple column
+data_set.drop(['reclat','reclong','GeoLocation'],axis=1,inplace=True)
+#rename 
+olympics_df.rename(columns=new_names, inplace=True) #new_names is a dictorny store key and value
+dataset.rename({‘F.Y.’: ‘FiscalYear’, ‘Market cap. ($B)’: ‘MarketCap($B)’}, axis=1,inplace=True) # direct mentione dictorny with key and values
+#Replcae decimal
+dataset[‘Founded’] = dataset[‘Founded’].apply(lambda x: None if pd.isnull(x) else ‘{0:.0f}’.format(pd.to_numeric(x)))
+
+#replace . by ,
+data_set['reclongitude']=data_set['reclongitude'].astype(str).str.replace('.',',')
+
+#replace particular value 2nd row value.
+data_set.loc[2,'mass']=6526
+
+#Indexing
+df['Identifier'].is_unique
+df = df.set_index('Identifier')
+
+#to fecth perticular row
+df.loc[206]
+#to get count of data type.
+df.get_dtype_counts()
+
+
+
+#to check perticular column
+df.loc[1905:, 'Date of Publication'].head(10
+#
+df['Date of Publication'] = pd.to_numeric(extr)
+
+# to fetch perticular values from cloumn as london 
+pub = df['Place of Publication']
+london = pub.str.contains('London')
+
+# replace multiple columes
+df['Place of Publication'] = np.where(london, 'London',
+                                      np.where(oxford, 'Oxford',
+                                               pub.str.replace('-', ' ')))
+											   
+								
+								
+#reading the data into text file and converting to dataframe.
+university_towns = []
+>>> with open('Datasets/university_towns.txt') as file:
+...     for line in file:
+...         if '[edit]' in line:
+...             # Remember this `state` until the next is found
+...             state = line
+...         else:
+...             # Otherwise, we have a city; keep `state` as last-seen
+...             university_towns.append((state, line))
+towns_df = pd.DataFrame(university_towns,
+...                         columns=['State', 'RegionName'])
+
+def get_citystate(item):
+...     if ' (' in item:
+...         return item[:item.find(' (')]
+...     elif '[' in item:
+...         return item[:item.find('[')]
+...     else:
+...         return item
+towns_df =  towns_df.applymap(get_citystate)
+
+#to eliminate 1st coulumn from csv 
+olympics_df = pd.read_csv('Datasets/olympics.csv', header=1)
+
+#Pie chart
+y=np.array([7,5,8,9,10])
+fruits=['mango','aaple','acfte','kd','tg']
+ecx=[0.1,0.2,.5,.6,.001]
+myc=['red','blue','pink','yellow','black']
+plt.pie(y,labels=fruits,startangle=45,explode=ecx,shadow=True,colors=myc)
+plt.legend(title='fruits')
+plt.show()
               
 
 
