@@ -1,0 +1,549 @@
+import random 
+py=random.randint(1,6) #give output random numb from 1to6
+
+if a>=b:
+  print("a is grater")
+elif b>=c:
+  print("b is grater")
+else:
+  print("c is greater")
+  
+player_score=input("entere the value:")
+while player_score < 50:
+  player_score = player_score + 1
+
+player_score
+player_input = int(player_input) #convert player_score value to integer
+type(player_score) #to check the type of the variable
+#while
+alid_entries = ['0', '1']
+ while player_input not in valid_entries:   # use of in and not in key word
+    print("Invalid Input!")
+    player_input = input("Please enter either 0 or 1: ").
+while True:      # infinte while loop, ending with break statement.
+  counter = counter + 1
+  if counter == 1000:
+    break    
+
+#function
+def add (a,b):   # defining the function add 
+   c=a+b
+    return c
+add(2,5)  # calling the function.
+
+#List
+fifa_wc_winners = ['Italy', 'Argentina', 'Germany', 'Brazil', 'France', 'Brazil', 'Italy', 'Spain', 'Germany', 'France']
+type(fifa_wc_winners)  #to find type
+'Spain' in fifa_wc_winners  # o check spain is present in list fifa_wc_winners using in key word
+'Indai' not in fifa_wc_winners # not in key word
+fifa_wc_winners.count('France') # to count how many times france is occured 
+player_inputs_list.append(0)  #append 
+len(fifa_wc_winner) # to find lenght of the list
+print("1st item:", planet[0]) # to print the vale from the lsit based on index
+
+#for loop with range function
+for i in range(1, 11):
+  print(i)
+
+for i in range(1,11,2): # for diffrence to 2
+  print(i)
+
+for i in fifa_wc_winners:  # to print values from the list
+  print(i)
+num=len(fifa_wc_winners)  
+for i in range(num):     # another way to print the values from list.
+   print (i)  
+   
+my_cars[0:5] # to print the values from 0th to 4th index 
+my_cars[:5]  # from staring to4th index
+my_cars[0:n:2]  # from 0th to nth index by leaving 2
+my_cars[::-1] # in reverse order 
+my_cars.index('Ford') # to print index value of the item ford
+my_cars.remove('Bentley') # to remove he value bentley from he from list
+my_cars.pop()   # to remove last value from the list
+my_cars.pop(3) # to remove item from index=3
+
+item_index=my_cars['Suzuki']  
+my_cars[item_index]='tata'  # to replace value based on index value
+
+2 dimensional
+list_name[row_index][col_index]
+planet_data[4][1] # to print specific value from the two_dimensional 
+planet_data[3]  # to print row values of 3 
+
+3 dimensional
+list_name[block_index][row_index][col_index]
+three_dim_list[0][1][0]   # to print item value for specific index
+
+for i in range(3): # Iterate through each block. There are 3 blocks.
+  for j in range(3): # Iterate through each row. There are 3 rows.
+    for k in range(3): # Iterate through each column. There are 3 columns.
+      print(three_dim_list[i][j][k], end=' ')
+    print()
+  print()
+
+natural_numbers = []  # creaing emp list
+for i in range(1, 11):  # and appending to empty list
+   natural_numbers.append(i)
+#Create a Python list containing the first 10 natural numbers using the list comprehension method.   
+nat_nums = [i for i in range(1, 11)]  # using   
+square_nat_nums = [i ** 2 for i in range(1, 11)]
+
+even_nums_list = []
+#without list comprehension method
+for i in range(1, 21):
+  if i % 2 == 0:
+    even_nums_list.append(i)
+even_nums_list
+#List comprehension method 
+even_nums = [i for i in range(1, 21) if i % 2 == 0]
+even_nums
+
+numpy
+import numpy as np
+ones = np.ones((5, 3, 3), dtype=int) # ones is funcion to print one 
+zeros = np.zeros((4, 2, 3), dtype=int)
+
+zeros_float.dtype  # tto find data type using dtype key word
+
+print(ones.ndim) # find dimenssion of the arry ones using ndim function.
+Using the 'shape' keyword find out the number of blocks, rows and columns in the 'ones' array.
+print(ones.shape) 
+
+#Create a one-dimensional array containing numbers between 5 and 20 using the 'arange()' function in the NumPy module.
+array1 = np.arange(5, 21)
+#Create an array of numbers from 1 to 24 such that the difference between two consecutive numbers is 4.
+array2 = np.arange(1, 25, 4) 
+array3 = np.arange(1, 25, 4, dtype=float)   # float values
+
+#Create an array containing 4 numbers between 1 to 25 using linspace.
+array4 = np.linspace(1, 25, 4).
+array5 = np.linspace(1, 25, 10)
+
+#reshape 
+reshaped_zeros = zeros.reshape(6, 4) # note item number shd not be changed.
+  
+ #Create a 'numpy' array using 'ndarray()' function having 5 rows and 2 columns.
+some_array = np.ndarray((5, 2), dtype=int) # create some random numbers
+
+Create a one-dimensional NumPy array containing 15 random integers between 50 and 100.
+rand_1d_array = np.random.randint(50, 100, size=15) # single dimenssion
+rand_2d_array = np.random.randint(50, 100, size=(5, 3)) # two dimensional
+rand_3d_array = np.random.randint(10, 50, size=(4, 2, 5)) #three dimensional
+
+#Convert a Python list into a NumPy array using the 'array()' function.
+arr = np.array([i for i in range(1, 16)])
+arr_converted = list(arr) #converting array into list
+
+#using arange and reshape
+one_dim_ar = np.arange(1, 25) # Creates a one-dimensional NumPy array having 24 items. 
+two_dim_ar = np.arange(1, 29).reshape(4, 7) # Creates a two-dimensional NumPy array having 4 rows and 7 columns. No. of items = 28
+three_dim_ar = np.arange(1, 31).reshape(2, 5, 3) # Creates a three-dimensional array having 2 blocks, 5 rows and 3 columns. No. of items = 30
+
+prices = np.array([13999, 6298, 10999, 14999, 7298, 6385, 8999, 9999, 9999, 13868])
+units_available = np.array([9, 8, 9, 9, 8, 8, 9, 6, 5, 7])
+total_price_for_each_smartphone = prices * units_available  #we can multply two array's
+#sum
+total_monetary_value = np.sum(total_price_for_each_smartphone)
+
+#Compute the average price of a smartphone.
+avg_price = np.mean(prices)
+#Using the 'min()' function, compute the lowest price of a smartphone.
+lowest_price = np.min(prices)
+
+#Using the 'min()' function, compute the lowest price of a smartphone.
+lowest_price = np.min(prices)
+
+#Using the 'max()' function, compute the highest price of a smartphone.
+highest_price = np.max(prices)
+
+#Compute the modal value using the 'mode()' function from the 'scipy.stats' module.
+from scipy import stats  # mode is use to find most occuring value 
+stats.mode(prices)    # in numpy mode function is not present it is in scipy import stats.
+ModeResult(mode=array([9999]), count=array([2]))
+
+#Square the elements of NumPy array using the exponent (**) operator. Use can use the 'np.pi' keyword to get the value of 'pi'.
+np_area_circles = np.pi * (np_radii ** 2)
+
+#Pandas
+import random
+import pandas as pd
+weights = pd.Series([random.randint(45, 60) for i in range(30)])
+
+weights.size
+#Find the number of rows and columns in the 'weights' Pandas series using the 'shape' keyword.
+weights.shape
+
+# Calculate the average value of all the numbers in a Pandas series.
+weights.mean()
+
+#Using the 'min()' and 'max()' functions, print the minimum and maximum values in the 'weights' Pandas series.
+print(weights.min())
+weights.max()
+
+#Print only the first 5 items in a Pandas series using the 'head()' function.
+weights.head()
+
+#Using the 'tail()' function, print the last 5 items in the Pandas series.
+weights.tail()
+
+#Using the 'head()' function, print the first 8 items of the weights series.
+weights.head(8)
+
+#Using the 'tail()' function, print the last 12 items of the weights series.
+weights.tail(12)
+
+#Retrieve items from a Pandas series using the indexing method.
+weights[13:22]
+
+#Print the items ranging from the indices 17 to 27.
+weights[17:28]
+
+#Compute the modal value in the 'weight' series.
+weights.mode()
+
+#Arrange the weights in the increasing order using the 'sort_values()' function.
+weights.sort_values(ascending=True)
+
+#Using the 'sort_values()' function, arrange the weights in the decreasing order.
+weights.sort_values(ascending=False)
+
+#To count the number of occurrences of an item in a Pandas series, you can use the value_counts() function.
+weights.value_counts()
+
+#Pandas
+import pandas as pd
+exo_train_df=pd.read_csv('https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/kepler-exoplanets-dataset/exoTrain.csv')
+exo_train_df.head()
+
+exo_train_df.shape  #Find the number of rows and columns in the 'exo_train_df' DataFrame.
+
+#Teacher Action: Check for the missing values using the 'isnull()' function.
+exo_train_df.isnull()  
+
+#Use the 'sum()' function to find the total number of True values in each column.
+exo_train_df.isnull().sum()
+
+#View all the columns in the 'exo_train_df' DataFrame.
+exo_train_df.columns
+
+#Get the values of the 'FLUX.1' column from a DataFrame.
+exo_train_df['FLUX.1']
+
+# Now, we will iterate through every column in the DataFrame, then will iterate through every item in each column.
+for column in exo_train_df.columns:
+  for item in exo_train_df[column].isnull():
+    if item == True:
+      num_missing_values += 1
+      
+#Slicing A DataFrame Using The iloc[] 
+dataframe_name.iloc[row_position_start : row_position_end, column_position_start : column_position_end]
+star_0 = exo_train_df.iloc[0, :] #display all the items of value 0
+
+#Display the last 5 rows of the 'exo_train_df' DataFrame using the 'tail()' function.
+exo_train_df.tail()
+
+# Using the 'iloc[]' function, create a Pandas series for the last star and store it in a variable called 'star_5086'.
+star_5086 = exo_train_df.iloc[5086, :]
+star_5086.head()
+
+Plot
+import matplotlib.pyplot as plt
+plt.plot([1, 2, 3, 4])     # by default it will take y axis if you menione one list.
+plt.ylabel('some numbers')  # label for y-axis
+plt.show() 
+
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16]) # plot x versus y 
+
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro') # plot x versus y and 'ro' is the design code for bit plot.
+plt.axis([0, 6, 0, 20])  #axis recembles [xmin, xmax, ymin, ymax]
+plt.show()
+
+
+# evenly sampled time at 200ms intervals
+t = np.arange(0., 5., 0.2)
+# red dashes, blue squares and green triangles
+plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^')
+plt.show()
+
+#matplotlib
+import matplotlib.pyplot as plt
+names = ['group_a', 'group_b', 'group_c']
+values = [1, 10, 100]
+plt.figure(figsize=(9, 3))
+plt.subplot(131)       #subplot (row,column,index) is use to print n number of plots in single page.
+plt.bar(names, values) #bar
+plt.subplot(132)
+plt.scatter(names, values)
+plt.subplot(133)
+plt.plot(names, values)   #line plot
+plt.suptitle('Categorical Plotting')  # tile of the plot 
+plt.show()
+
+#to lable
+plt.xlabel('Smarts')
+plt.ylabel('Probability')
+
+import numpy as np
+import matplotlib.pyplot as plt
+plt.figure(figsize=(16, 4)) #Call the 'figure()' function to resize the plot.
+x_values_star_0 = np.arange(1, 3198)
+y_values_star_0 = star_0[1:]
+plt.scatter(x_values_star_0, y_values_star_0)
+
+#line plot
+plt.plot(x_values_star_0, y_values_star_0)
+
+ 
+
+#Get the number of rows in the 'met_df' DataFrame using the 'shape' keyword.
+met_df.shape[0]  #row value
+
+# Get the descriptive statistics for the 'year' values in the 'met_df' DataFrame. 
+met_df['year'].describe()  #describeis the function
+
+#Create a boxplot for the 'mass' column in the 'met_df' DataFrame.
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+plt.figure(figsize=(15,5))
+sns.boxenplot(met_df['mass'])
+plt.show()
+
+#Retrieve all the rows from the 'met_df' DataFrame containing the year values less than or equal to 2016.
+met_df[met_df['year']<= 2016]
+
+#Retrieve the rows containing the year values less than 860 and greater than 2016 at the same time.
+correct_years_df = met_df[(met_df['year'] >= 860) & (met_df['year'] <= 2016)]
+correct_years_df
+# Compute the number of rows having the year values either less than 860 or greater than 2016 in the 'met_df' DataFrame.
+met_df.shape[0] - correct_years_df.shape[0]
+
+#Calculate the percent of values retained that is rounded off to two digits after the decimal point.
+round(correct_years_df.shape[0] * 100 / met_df.shape[0] ,2)
+
+#Get only the rows NOT having the 'reclat' value equal to 0. Use the tilde operator for this operation.
+correct_long_df[~(correct_long_df['reclong'] == 0)]
+
+#Remove the rows containing the 0 'reclat' and 0 'reclong' values from the 'correct_long_df'.
+correct_lat_long_df=correct_long_df[~((correct_long_df['reclat'] == 0) & (correct_long_df['reclong'] == 0))]
+correct_lat_long_df
+
+Calculate the percentage of values retained in the new DataFrame from the 'met_df' DataFrame.
+# Also, round-off the value to two digits after the decimal point.
+round(correct_lat_long_df.shape[0] * 100 / met_df.shape[0], 2)
+
+#Check whether the 'correct_lat_long_df' DataFrame has missing values or not using the 'isnull()' function.
+correct_lat_long_df.isnull().sum()
+
+#Retrieve all the rows containing the missing 'mass' values in the 'correct_lat_long_df' DataFrame.
+correct_lat_long_df[correct_lat_long_df['mass'].isnull() == True]
+
+#Create a list of the indices of above rows.
+row_indices = correct_lat_long_df[correct_lat_long_df['mass'].isnull() == True].index
+row_indices
+
+#Retrieve the missing 'mass' values from 'correct_lat_long_df' DataFrame using the 'loc[]' function. 
+missing_mass_values=correct_lat_long_df.loc[row_indides,'mass']
+missing_mass_values     
+
+#Replace the missing values in the 'mass' column in the 'correct_lat_long_df' DataFrame with median of mass.
+median_mass = correct_lat_long_df['mass'].median()
+correct_lat_long_df.loc[row_indides, 'mass'] = median_mass
+
+#Check whether all the missing mass values have been replaced by the median of the mass values or not.
+correct_lat_long_df.loc[row_indices, :]
+
+#Map
+import folium
+mumbai_map = folium.Map(location=[19.0760, 72.8777], width='90%', height='70%', tiles='Stamen Toner', zoom_start=15) 
+mumbai_map # 
+
+#Mark the Gateway of India (coordinates 18.9220, 72.8347) on the Mumbai map.
+mumbai_map = folium.Map(location=[19.0760, 72.8777], width='90%', height='70%', zoom_start=11)
+folium.Marker(location=[18.9220, 72.8347], popup='Gateway of India').add_to(mumbai_map)
+folium.Circle(location=[19.0896, 72.8656],
+              radius=1000, # radius in meters
+              popup='Chhatrapati Shivaji International Airport',
+              color='#0000ff', # hexadecimal color code for the blue colour.
+              fill=False).add_to(mumbai_map)
+folium.CircleMarker(location=[19.0380, 72.8538],
+                    radius=50, # radius in pixels
+                    popup='Wankhede Stadium',
+                    color='#ff0000', # hexadecimal color code for the red colour.
+                    fill=True,
+                    fill_color='#ff0000').add_to(mumbai_map)
+mumbai_map
+
+
+#Convert the 'year' values into integer type values.
+correct_lat_long_df['year'] = correct_lat_long_df['year'].astype('int')
+
+#Find out how many meteorites are in good condition ('nametype' == 'Valid') and how many are withered ('nametype' == 'Relict').
+correct_lat_long_df['nametype'].value_counts()
+
+#Create a DataFrame called 'found_relict_df' and store data only for those meteorites which were actually found.
+found_relict_df=correct_lat_long_df[(correct_lat_long_df['fall']== 'Found') & (correct_lat_long_df['nametype'] == 'Relict')]
+found_relict_df
+
+#Create a cartogram for the landing sites of the meteorites found in the withered condition.
+import folium
+map1 = folium.Map(location=[0, 0], width='90%', height='90%', tiles='Stamen Toner', zoom_start=1)
+
+for i in found_relict_df.index:
+  folium.Marker(location=[found_relict_df.loc[i, 'reclat'], found_relict_df.loc[i, 'reclong']],
+                popup=found_relict_df.loc[i, 'name']).add_to(map1)
+
+map1   
+
+#Find out how many meteorites were found in good condition after the year 2010.
+import folium
+map1 = folium.Map(location=[0, 0], width='90%', height='90%', tiles='Stamen Toner', zoom_start=1)
+
+for i in found_valid_df[found_valid_df['year'] > 2010].index:
+  folium.Marker(location=[found_valid_df.loc[i, 'reclat'], found_valid_df.loc[i, 'reclong']],
+                popup=found_valid_df.loc[i, 'name']).add_to(map1)
+
+
+#Find out how many meteorites found in good condition from 2008 to 2010 (both inclusive).
+found_valid_df[(found_valid_df['year'] > 2007) & (found_valid_df['year'] <= 2010)].shape
+
+#Create a cartogram for the meteorites found in good condition from 2005 to 2007 (both inclusive).
+map4 = folium.Map(location=[0, 0], width='90%', height='85%', tiles='Stamen Toner', zoom_start=1.5)
+
+for i in found_valid_df[(found_valid_df['year'] > 2004) & (found_valid_df['year'] <= 2007)].index:
+  folium.Marker(location=[found_valid_df.loc[i, 'reclat'], found_valid_df.loc[i, 'reclong']],
+              popup=found_valid_df.loc[i, 'name']).add_to(map4)
+map4
+
+#Use the string concatenation method to display the name of the place and mass of the meteorite in the marker popup.
+map5 = folium.Map(location=[0, 0], width='90%', height='90%', tiles='Stamen Toner', zoom_start=1.5)
+
+for i in found_valid_df[(found_valid_df['year'] > 2004) & (found_valid_df['year'] <= 2007)].index:
+  folium.Marker(location=[found_valid_df.loc[i, 'reclat'], found_valid_df.loc[i, 'reclong']],
+                popup=found_valid_df.loc[i, 'name'] + '\n' + str(found_valid_df.loc[i, 'mass'] / 1000) + ' kg').add_to(map5)
+                # The '\n' character adds a new line. Also, we have converted the mass into kg from grams by dividing the mass by 1000.
+map5
+
+
+
+#Add circular markers such that the radius of a circular marker represents the mass of the meteorite fallen.
+map6 = folium.Map(location=[0, 0], width='90%', height='90%', tiles='Stamen Toner', zoom_start=1.5)
+
+for i in found_valid_df[(found_valid_df['year'] > 2004) & (found_valid_df['year'] <= 2007)].index:
+  folium.Circle(location=[found_valid_df.loc[i, 'reclat'], found_valid_df.loc[i, 'reclong']],
+                radius=found_valid_df.loc[i, 'mass'],
+                color='crimson',
+                fill=True,
+                fill_color='crimson',
+                popup=found_valid_df.loc[i, 'name'] + '\n' + str(found_valid_df.loc[i, 'mass'] / 1000) + ' kg').add_to(map6)
+map6
+
+#counter plot
+import seaborn as sns
+plt.figure(figsize=(21, 7))
+sns.countplot(x='year', data=met_after_1990_df)
+plt.grid() # The 'grid()' function creates grid lines on a graph. It exists in the 'matplotlib.pyplot' module.
+plt.show()
+
+#Split the count bar for each meteorite counts for a year into the 'Fell' bar and the 'Found' bar.
+import seaborn as sns
+plt.figure(figsize=(21 ,7))
+sns.countplot(x='year' ,data=met_after_1990_df ,hue='fall')
+plt.grid
+plt.show()
+
+#Create a count plot for the 'year' column in the 'met_1961_1990_df' DataFrame with 'nametype' as the hue parameter.
+import seaborn as sns 
+plt.figure(figsize=(21,7))
+sns.countplot(x='year' , data=met_1961_1990_df , hue='nametype')
+plt.grid
+plt.show()
+
+# Create a DataFrame for the years between 1921 to 1960 (both inclusive).
+met_1921_1960_df = correct_lat_long_df[(correct_lat_long_df['year'] >= 1921) & (correct_lat_long_df['year'] <= 1960)]
+met_1921_1960_df
+
+#Create a Pandas series containing the year values between 1970 and 2000 including both of them.
+met_bet_1970_and_2000_series=correct_lat_long_df.loc[(correct_lat_long_df['year'] >=1970) & (correct_lat_long_df['year'] < 2001),'year']
+met_bet_1970_and_2000_series
+
+#Create a histogram for the Pandas series containing the year values between 1970 and 2000 including both of them.
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10,6))
+plt.hist(met_bet_1970_and_2000_series, bins=6) #we are creating 6 bars hence 6 bins.
+plt.grid() 
+plt.show()
+
+#Find the actual number of meteorites fell on Earth in each of the six intervals.
+print(correct_lat_long_df.loc[(correct_lat_long_df['year'] >= 1970) & (correct_lat_long_df['year'] < 1975), 'year'].value_counts().sum())
+
+#Create a histogram using the 'displot()' function from the seaborn library.
+import seaborn as sns
+plt.figure(figsize=(10,5))
+sns.displot(met_bet_1970_and_2000_series, bins=6 ,kde=False)
+plt.grid
+plt.show()
+
+# Create a histogram for the 'year' column in the 'correct_lat_long_df' DataFrame using the 'distplot()' function.
+plt.figure(figsize=(18, 6))
+sns.distplot(correct_lat_long_df['year'], kde=False) # For the time being, ignore the 'kde' parameter. We will cover it later.
+plt.grid()
+plt.show()
+
+#Create a histogram to visualise the number of meteorites fallen after the year 1900 using the 'distplot()' function.
+plt.figure(figsize=(18, 6))
+sns.distplot(correct_lat_long_df.loc[correct_lat_long_df['year'] > 1900, 'year'], kde=False)
+plt.grid()
+plt.show()
+
+#annotate()
+#Get the list containing the bar attributes for the count plot displaying the number of meteorites fallen from 1970 to 2000.
+# Store the count plot in the 'cp' variable.
+cp = sns.countplot(x='year', data=correct_lat_long_df[(correct_lat_long_df['year'] >= 1970) & (correct_lat_long_df['year'] < 2001)])
+print("Length of the cp.patches list is", len(cp.patches), '\n') # The newline character adds an empty line.
+# Get the list containing the bar (or rectangle) attributes.
+for p in cp.patches:
+  print(p)
+
+#Get the height, width, x and y coordinates of each bar in the count plot stored in the 'cp' variable.
+for p in cp.patches:
+  print("Width =", p.get_width(), 
+        "\nHeight =", p.get_height(), 
+        "\nx-coordinate =", p.get_x(), 
+        "\ny-coordinate =", p.get_y(), "\n") # The newline character adds an empty line after printing every attribute for each bar.
+        
+    
+#Annotate bars in the count plot for the meteorites fallen between the years 1970 and 2000 (including both).
+plt.figure(figsize=(21, 7))
+cp = sns.countplot(x='year', data=correct_lat_long_df[(correct_lat_long_df['year'] >= 1970) & (correct_lat_long_df['year'] < 2001)])
+for p in cp.patches:
+  cp.annotate(str(p.get_height()), xy=(p.get_x() + p.get_width() / 2, p.get_height()),
+              ha='center', va='bottom')
+
+# Annotate a histogram created using the 'distplot()' function.
+plt.figure(figsize=(10, 5))
+dp = sns.distplot(correct_lat_long_df.loc[(correct_lat_long_df['year'] >= 1970) & (correct_lat_long_df['year'] < 2001), 'year'], bins=6, kde=False)
+for patch in dp.patches:
+  dp.annotate(str(patch.get_height()), xy=(patch.get_x() + patch.get_width() / 2, patch.get_height()),
+              ha='center', va='bottom')
+
+plt.grid()
+plt.show()
+
+#fill value in the null row data cleaning
+co=df['mass'].median()
+df['mass'].fillna(co,inplace=True)
+
+              
+
+
+
+
+
+
+
+
+
+
+
